@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "764163665226",
+    "project_id": "clinical-note-e12c5",
+    "storage_bucket": "clinical-note-e12c5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764163665226:android:b127f009b97180be4765b3",
+        "android_client_info": {
+          "package_name": "com.example.clinical_note_frontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcL-rlzlVKk5gZGdVNWVcnK39zK3G54DY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764163665226:android:e4204b464e11a2614765b3",
+        "android_client_info": {
+          "package_name": "com.example.new_clinical_frontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcL-rlzlVKk5gZGdVNWVcnK39zK3G54DY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
