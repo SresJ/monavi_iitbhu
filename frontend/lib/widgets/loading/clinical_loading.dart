@@ -7,10 +7,10 @@ class ClinicalLoading extends StatefulWidget {
   final List<String>? rotatingMessages;
 
   const ClinicalLoading({
-    Key? key,
+    super.key,
     this.message,
     this.rotatingMessages,
-  }) : super(key: key);
+  });
 
   @override
   State<ClinicalLoading> createState() => _ClinicalLoadingState();

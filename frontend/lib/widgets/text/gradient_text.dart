@@ -10,12 +10,12 @@ class GradientText extends StatelessWidget {
   final int? animationDelay;
 
   const GradientText({
-    Key? key,
+    super.key,
     required this.text,
     this.style,
     this.gradient,
     this.animationDelay,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -17,10 +17,10 @@ class PatientCard extends StatefulWidget {
   final VoidCallback? onTap;
 
   const PatientCard({
-    Key? key,
+    super.key,
     required this.patient,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   State<PatientCard> createState() => _PatientCardState();

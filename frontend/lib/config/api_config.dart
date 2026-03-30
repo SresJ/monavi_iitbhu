@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 /// API configuration for Clinical AI Dashboard
 class ApiConfig {
   ApiConfig._();
@@ -5,7 +7,7 @@ class ApiConfig {
   /// Base URL for backend API
   /// IMPORTANT: Must use HTTPS in production to avoid mixed content blocking
   /// on Flutter Web. Browsers block HTTP requests from HTTPS pages.
-  static const String baseUrl = 'http://10.0.2.2:8000';
+  static String  baseUrl = "http://localhost:8000";
 
   /// API endpoints
   static const String apiPrefix = '/api';

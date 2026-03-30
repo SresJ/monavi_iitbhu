@@ -10,15 +10,15 @@ class StatusBanner extends StatelessWidget {
   final StatusLevel level;
 
   const StatusBanner({
-    Key? key,
+    super.key,
     required this.primaryMessage,
     this.secondaryMessage,
     required this.level,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

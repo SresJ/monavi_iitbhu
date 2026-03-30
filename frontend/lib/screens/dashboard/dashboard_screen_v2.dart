@@ -17,7 +17,7 @@ import '../../shell/main_shell.dart';
 /// - Big interactive insight button
 /// - No back button
 class DashboardScreenV2 extends StatefulWidget {
-  const DashboardScreenV2({Key? key}) : super(key: key);
+  const DashboardScreenV2({super.key});
 
   @override
   State<DashboardScreenV2> createState() => _DashboardScreenV2State();
@@ -878,7 +878,7 @@ class _DashboardScreenV2State extends State<DashboardScreenV2>
                             ? DesignTokens.headingMedium
                             : DesignTokens.headingLarge)
                         .copyWith(
-                      color: Colors.white,
+                      color: DesignTokens.textPrimary,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
@@ -905,7 +905,7 @@ class _DashboardScreenV2State extends State<DashboardScreenV2>
             ? DesignTokens.headingSmall
             : DesignTokens.headingMedium)
         .copyWith(
-      color: Colors.white,
+      color: DesignTokens.textPrimary,
       fontWeight: FontWeight.w700,
     );
 
@@ -1182,28 +1182,19 @@ class _DashboardScreenV2State extends State<DashboardScreenV2>
                             ),
                           ],
                         ),
-                        child: ClipOval(
-                          child: Image.asset(
-                            'assets/profile${index + 1}.jpg',
-                            width: 56,
-                            height: 56,
-                            fit: BoxFit.cover,
-                            errorBuilder: (context, error, stackTrace) {
-                              return Container(
-                                decoration: BoxDecoration(
-                                  gradient: DesignTokens.medicalGradient,
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    _getInitials(patient['name']),
-                                    style: DesignTokens.labelLarge.copyWith(
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.w700,
-                                    ),
-                                  ),
-                                ),
-                              );
-                            },
+                        child: Container(
+                          decoration: const BoxDecoration(
+                            color: Colors.transparent,
+                            shape: BoxShape.circle,
+                          ),
+                          child: Center(
+                            child: Icon(
+                              patient['sex']?.toString().toLowerCase() == 'female'
+                                  ? Icons.woman
+                                  : (patient['sex']?.toString().toLowerCase() == 'male' ? Icons.man : Icons.person),
+                              size: 32,
+                              color: statusColor,
+                            ),
                           ),
                         ),
                       ),
@@ -1392,7 +1383,7 @@ class _GlowingBorderPainter extends CustomPainter {
   _GlowingBorderPainter({
     required this.progress,
     required this.glowColor,
-    this.borderRadius = 12,
+    this.borderRadius = 16.0,
   });
 
   @override

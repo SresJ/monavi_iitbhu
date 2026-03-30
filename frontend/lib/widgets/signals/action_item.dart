@@ -11,13 +11,13 @@ class ActionItem extends StatelessWidget {
   final VoidCallback onTap;
 
   const ActionItem({
-    Key? key,
+    super.key,
     required this.patientName,
     required this.primaryInfo,
     this.secondaryInfo,
     required this.priority,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

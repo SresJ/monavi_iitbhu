@@ -10,13 +10,13 @@ class HoverScaleCard extends StatefulWidget {
   final Duration duration;
 
   const HoverScaleCard({
-    Key? key,
+    super.key,
     required this.child,
     this.onTap,
     this.glowColor,
     this.scale = 1.02,
     this.duration = const Duration(milliseconds: 200),
-  }) : super(key: key);
+  });
 
   @override
   State<HoverScaleCard> createState() => _HoverScaleCardState();
@@ -66,14 +66,14 @@ class GlassMorphismCard extends StatelessWidget {
   final List<BoxShadow>? boxShadow;
 
   const GlassMorphismCard({
-    Key? key,
+    super.key,
     required this.child,
     this.borderColor,
     this.borderWidth = 1.0,
     this.borderRadius,
     this.padding,
     this.boxShadow,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -107,11 +107,11 @@ class ConfidenceRing extends StatefulWidget {
   final double size;
 
   const ConfidenceRing({
-    Key? key,
+    super.key,
     required this.confidence,
     required this.level,
     this.size = 60,
-  }) : super(key: key);
+  });
 
   @override
   State<ConfidenceRing> createState() => _ConfidenceRingState();

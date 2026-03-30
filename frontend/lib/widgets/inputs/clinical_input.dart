@@ -20,7 +20,7 @@ class ClinicalInput extends StatefulWidget {
   final bool autofocus;
 
   const ClinicalInput({
-    Key? key,
+    super.key,
     this.label,
     this.hint,
     this.helperText,
@@ -37,7 +37,7 @@ class ClinicalInput extends StatefulWidget {
     this.validator,
     this.enabled = true,
     this.autofocus = false,
-  }) : super(key: key);
+  });
 
   @override
   State<ClinicalInput> createState() => _ClinicalInputState();
@@ -172,14 +172,14 @@ class ClinicalTextarea extends StatelessWidget {
   final Function(String)? onChanged;
 
   const ClinicalTextarea({
-    Key? key,
+    super.key,
     this.label,
     this.hint,
     this.controller,
     this.minLines = 5,
     this.maxLines = 10,
     this.onChanged,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

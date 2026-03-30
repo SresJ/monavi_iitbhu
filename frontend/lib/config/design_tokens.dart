@@ -9,34 +9,34 @@ class DesignTokens {
 
   // ==================== COLORS ====================
 
-  // Background layers (AMOLED)
-  static const voidBlack = Color(0xFF000000);
-  static const surfaceBlack = Color(0xFF0A0A0C);
-  static const cardBlack = Color(0xFF121216);
-  static const borderGray = Color(0xFF1C1E21);
+  // Background layers (Now Light Theme despite names for backward compatibility)
+  static const voidBlack = Color(0xFFF8F9FA); // Main background
+  static const surfaceBlack = Color(0xFFFFFFFF); // Surfaces like app bar, cards
+  static const cardBlack = Color(0xFFFFFFFF); // Cards
+  static const borderGray = Color(0xFFE5E7EB); // Borders and dividers
 
   // Primary palette (Medical Blue/Teal)
   static const medicalBlue = Color(0xFF1E88E5);
   static const clinicalTeal = Color(0xFF00ACC1);
   static const deepBlue = Color(0xFF1565C0);
 
-  // Confidence levels (Sober, professional tones)
-  static const confidenceHigh = Color(0xFF4ADE80); // Softer green
-  static const confidenceMed = Color(0xFFFBBF24); // Softer amber/gold
-  static const confidenceLow = Color(0xFFF87171); // Softer coral red
+  // Confidence levels (Sober, professional tones, darkened for light UI)
+  static const confidenceHigh = Color(0xFF15803D); // Dark green
+  static const confidenceMed = Color(0xFFB45309); // Dark amber/orange
+  static const confidenceLow = Color(0xFFB91C1C); // Dark red
 
-  // Semantic colors (muted)
-  static const success = Color(0xFF34D399);
-  static const warning = Color(0xFFFBBF24);
-  static const error = Color(0xFFF87171);
+  // Semantic colors (darkened)
+  static const success = Color(0xFF059669); // Emerald 600
+  static const warning = Color(0xFFD97706); // Amber 600
+  static const error = Color(0xFFDC2626); // Red 600
 
   // Selected/Active state (teal-based instead of red)
   static const selectedAccent = Color(0xFF2DD4BF); // Soft teal for selected cards
 
   // Text hierarchy
-  static const textPrimary = Color(0xFFFFFFFF);
-  static const textSecondary = Color(0xFFB4B4B4);
-  static const textTertiary = Color(0xFF6B7280);
+  static const textPrimary = Color(0xFF111827); // Dark gray/black text
+  static const textSecondary = Color(0xFF6B7280); // Medium gray text
+  static const textTertiary = Color(0xFF9CA3AF); // Light gray text
 
   // ==================== TYPOGRAPHY ====================
   // Poppins for titles/headings (elegant, professional)

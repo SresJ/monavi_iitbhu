@@ -10,11 +10,11 @@ class SkeletonLoader extends StatelessWidget {
   final BorderRadius? borderRadius;
 
   const SkeletonLoader({
-    Key? key,
+    super.key,
     this.width,
     this.height,
     this.borderRadius,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,7 @@ class SkeletonLoader extends StatelessWidget {
 
 /// Skeleton for metric cards
 class SkeletonMetricCard extends StatelessWidget {
-  const SkeletonMetricCard({Key? key}) : super(key: key);
+  const SkeletonMetricCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +72,7 @@ class SkeletonMetricCard extends StatelessWidget {
 
 /// Skeleton for patient cards
 class SkeletonPatientCard extends StatelessWidget {
-  const SkeletonPatientCard({Key? key}) : super(key: key);
+  const SkeletonPatientCard({super.key});
 
   @override
   Widget build(BuildContext context) {

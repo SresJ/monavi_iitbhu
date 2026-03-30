@@ -17,7 +17,7 @@ import '../../shell/main_shell.dart';
 /// - Pulsing animations
 /// - Beautiful charts
 class AnalyticsScreen extends StatefulWidget {
-  const AnalyticsScreen({Key? key}) : super(key: key);
+  const AnalyticsScreen({super.key});
 
   @override
   State<AnalyticsScreen> createState() => _AnalyticsScreenState();
@@ -1254,7 +1254,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen>
                         ? DesignTokens.headingSmall
                         : DesignTokens.headingMedium)
                     .copyWith(
-                  color: Colors.white,
+                  color: DesignTokens.textPrimary,
                   fontWeight: FontWeight.w700,
                 ),
                 maxLines: 1,

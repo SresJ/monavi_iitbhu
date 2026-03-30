@@ -17,8 +17,7 @@ import '../../services/pdf_service.dart';
 class AnalysisResultScreen extends StatefulWidget {
   final String analysisId;
 
-  const AnalysisResultScreen({Key? key, required this.analysisId})
-    : super(key: key);
+  const AnalysisResultScreen({super.key, required this.analysisId});
 
   @override
   State<AnalysisResultScreen> createState() => _AnalysisResultScreenState();

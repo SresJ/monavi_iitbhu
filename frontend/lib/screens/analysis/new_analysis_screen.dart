@@ -313,7 +313,7 @@ class _NewAnalysisScreenState extends State<NewAnalysisScreen> {
                 }
 
                 return DropdownButtonFormField<Patient>(
-                  value: _selectedPatient,
+                  initialValue: _selectedPatient,
                   isExpanded: true,
                   decoration: InputDecoration(
                     filled: true,
@@ -512,7 +512,7 @@ class _NewAnalysisScreenState extends State<NewAnalysisScreen> {
       onPressed: onAdd,
       icon: Icon(icon, color: DesignTokens.medicalBlue),
       label: Text(
-        'Add ${title}',
+        'Add $title',
         style: TextStyle(color: DesignTokens.medicalBlue),
         overflow: TextOverflow.ellipsis,
       ),
@@ -570,7 +570,7 @@ class _NewAnalysisScreenState extends State<NewAnalysisScreen> {
                 ),
               ),
             );
-          }).toList(),
+          }),
         ],
       ],
     );

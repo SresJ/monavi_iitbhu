@@ -9,11 +9,11 @@ class TrendIndicator extends StatelessWidget {
   final String? value; // Optional - only show if meaningful
 
   const TrendIndicator({
-    Key? key,
+    super.key,
     required this.label,
     required this.direction,
     this.value,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

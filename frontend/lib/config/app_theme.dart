@@ -12,17 +12,17 @@ class AppTheme {
       useMaterial3: true,
 
       // Brightness
-      brightness: Brightness.dark,
+      brightness: Brightness.light,
 
       // Color scheme
-      colorScheme: const ColorScheme.dark(
+      colorScheme: const ColorScheme.light(
         primary: DesignTokens.medicalBlue,
         secondary: DesignTokens.clinicalTeal,
-        surface: DesignTokens.cardBlack,
+        surface: DesignTokens.cardBlack, // which is now white
         error: DesignTokens.error,
         onPrimary: Colors.white,
         onSecondary: Colors.white,
-        onSurface: DesignTokens.textPrimary,
+        onSurface: DesignTokens.textPrimary, // which is now dark
         onError: Colors.white,
       ),
 
@@ -43,9 +43,9 @@ class AppTheme {
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: DesignTokens.radiusMd,
-          side: BorderSide(color: DesignTokens.borderGray, width: 1),
+          side: const BorderSide(color: DesignTokens.borderGray, width: 1),
         ),
-        shadowColor: Colors.black.withOpacity(0.2),
+        shadowColor: Colors.black.withOpacity(0.05), // Lighter shadow for light theme
       ),
 
       // Input decoration theme

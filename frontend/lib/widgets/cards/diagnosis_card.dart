@@ -13,12 +13,12 @@ class DiagnosisCard extends StatefulWidget {
   final bool compact;
 
   const DiagnosisCard({
-    Key? key,
+    super.key,
     required this.diagnosis,
     required this.rank,
     this.initiallyExpanded = false,
     this.compact = false,
-  }) : super(key: key);
+  });
 
   @override
   State<DiagnosisCard> createState() => _DiagnosisCardState();

@@ -4,7 +4,7 @@ import '../../config/design_tokens.dart';
 
 /// Reusable animated orb background - matches landing page
 class AnimatedOrbBackground extends StatefulWidget {
-  const AnimatedOrbBackground({Key? key}) : super(key: key);
+  const AnimatedOrbBackground({super.key});
 
   @override
   State<AnimatedOrbBackground> createState() => _AnimatedOrbBackgroundState();

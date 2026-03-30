@@ -6,7 +6,7 @@ import '../../widgets/buttons/clinical_button.dart';
 import '../../widgets/inputs/clinical_input.dart';
 
 class RegisterScreen extends StatefulWidget {
-  const RegisterScreen({Key? key}) : super(key: key);
+  const RegisterScreen({super.key});
 
   @override
   State<RegisterScreen> createState() => _RegisterScreenState();

@@ -8,7 +8,7 @@ import '../../widgets/inputs/clinical_input.dart';
 import '../../widgets/effects/hover_scale_card.dart';
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();

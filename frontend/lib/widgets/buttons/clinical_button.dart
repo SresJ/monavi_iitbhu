@@ -16,7 +16,7 @@ class ClinicalButton extends StatefulWidget {
   final bool fullWidth;
 
   const ClinicalButton({
-    Key? key,
+    super.key,
     required this.label,
     this.onPressed,
     this.icon,
@@ -25,7 +25,7 @@ class ClinicalButton extends StatefulWidget {
     this.size = ClinicalButtonSize.medium,
     this.isLoading = false,
     this.fullWidth = false,
-  }) : super(key: key);
+  });
 
   // Named constructors for convenience
   factory ClinicalButton.primary({
@@ -154,7 +154,10 @@ class _ClinicalButtonState extends State<ClinicalButton> {
           borderRadius: DesignTokens.radiusMd,
           child: Padding(
             padding: _getPadding(),
-            child: _buildContent(DesignTokens.textPrimary, isDisabled),
+            child: _buildContent(
+              isDisabled ? DesignTokens.textTertiary : Colors.white, 
+              isDisabled
+            ),
           ),
         ),
       ),

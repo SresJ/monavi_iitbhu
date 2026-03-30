@@ -10,12 +10,12 @@ class ConfidenceRing extends StatefulWidget {
   final bool animate;
 
   const ConfidenceRing({
-    Key? key,
+    super.key,
     required this.confidence,
     required this.confidenceLevel,
     this.size = 120,
     this.animate = true,
-  }) : super(key: key);
+  });
 
   @override
   State<ConfidenceRing> createState() => _ConfidenceRingState();

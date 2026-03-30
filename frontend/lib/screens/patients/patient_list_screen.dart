@@ -19,7 +19,7 @@ import '../../widgets/loading/skeleton_loader.dart';
 /// - Interactive animations
 /// - Animated background
 class PatientListScreen extends StatefulWidget {
-  const PatientListScreen({Key? key}) : super(key: key);
+  const PatientListScreen({super.key});
 
   @override
   State<PatientListScreen> createState() => _PatientListScreenState();
@@ -522,28 +522,19 @@ class _PatientListScreenState extends State<PatientListScreen>
                         ),
                       ],
                     ),
-                    child: ClipOval(
-                      child: Image.asset(
-                        patient.avatarPath,
-                        width: 64,
-                        height: 64,
-                        fit: BoxFit.cover,
-                        errorBuilder: (context, error, stackTrace) {
-                          return Container(
-                            decoration: BoxDecoration(
-                              gradient: DesignTokens.medicalGradient,
-                            ),
-                            child: Center(
-                              child: Text(
-                                patient.initials,
-                                style: DesignTokens.headingSmall.copyWith(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                              ),
-                            ),
-                          );
-                        },
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        color: Colors.transparent,
+                        shape: BoxShape.circle,
+                      ),
+                      child: Center(
+                        child: Icon(
+                          patient.sex?.toLowerCase() == 'female'
+                              ? Icons.woman
+                              : (patient.sex?.toLowerCase() == 'male' ? Icons.man : Icons.person),
+                          size: 38,
+                          color: DesignTokens.clinicalTeal,
+                        ),
                       ),
                     ),
                   ),
@@ -782,7 +773,7 @@ class _PatientListScreenState extends State<PatientListScreen>
 
 /// Add Patient Dialog - Clean, minimal with fancy icons
 class _AddPatientDialog extends StatefulWidget {
-  const _AddPatientDialog({Key? key}) : super(key: key);
+  const _AddPatientDialog({super.key});
 
   @override
   State<_AddPatientDialog> createState() => _AddPatientDialogState();

@@ -9,11 +9,11 @@ class ConfidenceVisual extends StatelessWidget {
   final String? insight; // Optional clinical insight
 
   const ConfidenceVisual({
-    Key? key,
+    super.key,
     required this.label,
     required this.confidenceScore,
     this.insight,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

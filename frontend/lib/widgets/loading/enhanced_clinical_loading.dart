@@ -7,10 +7,10 @@ class EnhancedClinicalLoading extends StatelessWidget {
   final double size;
 
   const EnhancedClinicalLoading({
-    Key? key,
+    super.key,
     this.message,
     this.size = 60.0,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -51,11 +51,11 @@ class ShimmerCard extends StatefulWidget {
   final BorderRadius? borderRadius;
 
   const ShimmerCard({
-    Key? key,
+    super.key,
     this.height = 100,
     this.width,
     this.borderRadius,
-  }) : super(key: key);
+  });
 
   @override
   State<ShimmerCard> createState() => _ShimmerCardState();
