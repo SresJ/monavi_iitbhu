@@ -1,10 +1,10 @@
-# Project Name
+# MONAVI : Clinical AI Dashboard
 
 <a id="readme-top"></a>
 
 <div align="center">
-  <img src="assets/logo.jpeg" alt="Logo" width="240" height="80" style="border-radius: 50%;">
-  <h3 align="center">Clinical AI Dashboard</h3>
+  <img src="assets/logo.jpeg" alt="Logo" width="375" height="150" style="border-radius: 50%;">
+
   <p align="center">
     A comprehensive Flutter application for clinical analysis, patient management, and AI-driven medical insights.
     <br />
@@ -37,8 +37,8 @@ Visuals help users understand your interface instantly.
 | :--- | :--- |
 | **Main Dashboard** | ![Dashboard](assets/dashboard.jpeg) |
 | **Patient Management** | ![Patients](assets/patients.jpeg) |
-| **Data Analytics 1** | ![Analytics 1](assets/analytics1.jpeg) |
-| **Data Analytics 2** | ![Analytics 2](assets/analytics2.jpeg) |
+| **Data Analytics (1)** | ![Analytics 1](assets/analytics1.jpeg) |
+| **Data Analytics (2)** | ![Analytics 2](assets/analytics2.jpeg) |
 
 ---
 
@@ -100,5 +100,5 @@ Follow these steps to get your local development environment set up.
    ```
 3. Run the app on an available device/web:
    ```sh
-   flutter run
+   flutter run -d chrome
    ```

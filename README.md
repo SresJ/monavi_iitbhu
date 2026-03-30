@@ -78,10 +78,3 @@ To get the Clinical AI Dashboard running locally, you must run both the backend 
 * Please refer to the [Frontend Setup Guide](./frontend/README.md) for instructions on installing dependencies, connecting Firebase, and running the Flutter app.
 
 ---
-
-<div align="center">
-  <!-- SPACE FOR ARCHITECTURE DIAGRAM OR OTHER GRAPHICS -->
-  <br/>
-  <p><i>Insert your system architecture diagram or platform banner here.</i></p>
-  <br/>
-</div>
